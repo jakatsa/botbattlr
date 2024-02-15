@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+Galactic Bot Army Application
+Welcome to the Galactic Bot Army application! This React-based web application allows users to manage a collection of bots. Below is an overview of the components involved in the application:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Components:
+App Component (App.js):
+Main component of the application.
+Utilizes React Router for navigation.
+Manages state for the list of bots and the user's bot army.
+Fetches bot data from an external API using useEffect.
+Renders the NavBar component and sets up routes for different pages.
+Passes down necessary props to child components.
+NavBar Component (NavBar.jsx):
+Renders the navigation bar for the application.
+Includes links to the home page, available bots page, and user's bot army page.
+Utilizes react-router-dom for navigation.
+Home Component (Home.jsx):
+Renders the home page of the application.
+Displays the title of the application and an image.
+Bot Collection Component (BotCollection.jsx):
+Renders the list of available bots.
+Allows users to add bots to their bot army.
+Provides pagination functionality to view more bots.
+Utilizes the Bot component to render individual bots.
+Your Bot Army Component (YourBotArmy.jsx):
+Renders the list of bots in the user's bot army.
+Allows users to release bots from their army.
+Utilizes the Bot component to render individual bots.
+Bot Component (Bot.jsx):
+Renders individual bot information.
+Includes functionalities such as adding to the army and releasing from the army.
+Instructions for Running the Application:
+Clone the repository to your local machine.
+Navigate to the project directory in your terminal.
+Install dependencies by running npm install.
+Start the development server with npm start.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Additional Notes:
+Ensure you have Node.js installed on your machine to run the application.
+Make sure you have an active internet connection to fetch bot data from the external API.
+Author Joe Akatsa
